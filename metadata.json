@@ -1,0 +1,6 @@
+{
+  "name": "Nocturne — 3D Butterfly",
+  "description": "An interactive, music-reactive 3D butterfly digital art installation with iridescent wings, natural flight kinematics, and real-time audio analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

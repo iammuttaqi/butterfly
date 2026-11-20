@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #050816;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek range sliders for audio seek & volume */
+input[type='range'].nocturne-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type='range'].nocturne-slider::-webkit-slider-runnable-track {
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(203, 213, 225, 0.22);
+}
+
+input[type='range'].nocturne-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  margin-top: -4px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  border: 1px solid rgba(167, 139, 250, 0.7);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+input[type='range'].nocturne-slider:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background: #ffffff;
+}
+
+input[type='range'].nocturne-slider::-moz-range-track {
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(203, 213, 225, 0.22);
+}
+
+input[type='range'].nocturne-slider::-moz-range-thumb {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  border: 1px solid rgba(167, 139, 250, 0.7);
+}
